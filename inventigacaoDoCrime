@@ -1,0 +1,47 @@
+// import static org.junit.jupiter.api.Assertions.assertEquals;
+
+// import org.junit.jupiter.api.Test;
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello world!");
+    boolean TelefonouParaAVitima = false;
+      boolean EsteveNoLocalDoCrime = false;
+      boolean MoraPertoDaVitima = false;
+      boolean DeviaParaAVitima = false;
+      boolean JaTrabalhouComAVitima = false;
+    int suspeita = 0;
+
+    //Aumenta o nivel de suspeita se a pessoa responder positivamente
+      if (TelefonouParaAVitima == true) {
+        suspeita = suspeita + 1;
+      }
+      if (EsteveNoLocalDoCrime == true) {
+        suspeita = suspeita + 1;
+      }
+    if (MoraPertoDaVitima == true) {
+      suspeita = suspeita + 1;
+    }
+    if (DeviaParaAVitima == true) {
+      suspeita = suspeita + 1;
+    }
+    if (JaTrabalhouComAVitima == true) {
+      suspeita = suspeita + 1;
+    } 
+
+    if (suspeita == 5) {
+      System.out.println("Assassino");
+    }else{
+    if (suspeita >= 3) {
+      System.out.println("Cumplice");
+    }else{
+    if (suspeita >= 2) {
+      System.out.println("Suspeito");
+    } else {
+      System.out.println("Inocente");
+    }
+  }
+}
+}
+}
+  
